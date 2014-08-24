@@ -53,8 +53,8 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 " mappings for plugins
 map <leader>td <Plug>TaskList
-map <leader>g :GundoToggle<CR>
-map <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>g :GundoToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
