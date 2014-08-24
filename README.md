@@ -31,3 +31,17 @@ or on older versions of git
     % git clone git@github.com:mavjs/dotfiles.git
     % cd dotfiles
     % git submodule update --init
+
+Things to do after installing
+-----------------------------
+Please make sure you have [nodejs](http://nodejs.org/) which have npm, [brew](http://brew.sh/) if you're on Mac OSX, and for less headaches, install [macvim](https://code.google.com/p/macvim/)    
+    
+    brew install macvim --override-system-vim
+    
+    brew install v8
+    
+    sudo npm install -g jshint jsonlint js-yaml
+    
+    cd dotfiles/vim/.vim/bundle/tern_for_vim
+    
+    npm install
