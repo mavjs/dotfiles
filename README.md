@@ -23,11 +23,11 @@ Make sure you've [git](http://git-scm.com/) installed.
 
 
 Then clone the repo like this
-::
+
     % git clone --recursive git@github.com:mavjs/dotfiles.git
 
 or on older versions of git
-::
+    
     % git clone git@github.com:mavjs/dotfiles.git
     % cd dotfiles
     % git submodule update --init
