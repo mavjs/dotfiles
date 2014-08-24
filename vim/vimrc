@@ -96,7 +96,7 @@ let disable_lint = 0
 let g:SuperTabDefaultCompletionType = "context"
 let g:mustache_abbreviations = 1
 let g:nodejs_complete_config = {
-            \ 'js_compl_fn': 'jscomplete#CompleteJS',
+            \ 'js_compl_fn': 'javascriptcomplete#CompleteJS',
             \ 'max_node_compl_len': 15
             \}
 let d8_command = '/usr/local/bin/v8'

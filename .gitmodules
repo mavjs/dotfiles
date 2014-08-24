@@ -64,15 +64,6 @@
 [submodule "vim/.vim/bundle/jedi-vim"]
 	path = vim/.vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "vim/.vim/bundle/pep8"]
-	path = vim/.vim/bundle/pep8
-	url = https://github.com/vim-scripts/pep8.git
-[submodule "vim/.vim/bundle/pytest.vim"]
-	path = vim/.vim/bundle/pytest.vim
-	url = https://github.com/vim-scripts/pytest.vim.git
-[submodule "vim/.vim/bundle/pydoc.vim"]
-	path = vim/.vim/bundle/pydoc.vim
-	url = https://github.com/fs111/pydoc.vim.git
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
