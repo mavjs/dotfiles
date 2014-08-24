@@ -7,3 +7,87 @@
 [submodule "vim/.vim/bundle/molokai"]
 	path = vim/.vim/bundle/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "vim/.vim/bundle/Command-T"]
+	path = vim/.vim/bundle/Command-T
+	url = https://github.com/wincent/Command-T.git
+[submodule "vim/.vim/bundle/minibufexpl.vim"]
+	path = vim/.vim/bundle/minibufexpl.vim
+	url = https://github.com/vim-scripts/minibufexpl.vim.git
+[submodule "vim/.vim/bundle/vim-makegreen"]
+	path = vim/.vim/bundle/vim-makegreen
+	url = https://github.com/reinh/vim-makegreen.git
+[submodule "vim/.vim/bundle/TaskList.vim"]
+	path = vim/.vim/bundle/TaskList.vim
+	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "vim/.vim/bundle/The-NERD-tree"]
+	path = vim/.vim/bundle/The-NERD-tree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/.vim/bundle/vim-git"]
+	path = vim/.vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim/.vim/bundle/supertab"]
+	path = vim/.vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/.vim/bundle/gundo.vim"]
+	path = vim/.vim/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim/.vim/bundle/ropevim"]
+	path = vim/.vim/bundle/ropevim
+	url = https://github.com/python-rope/ropevim.git
+[submodule "vim/.vim/bundle/snipmate.vim"]
+	path = vim/.vim/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/.vim/bundle/spec.vim"]
+	path = vim/.vim/bundle/spec.vim
+	url = https://github.com/vim-scripts/spec.vim.git
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/vim-indent-guides"]
+	path = vim/.vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/.vim/bundle/vim-javascript-syntax"]
+	path = vim/.vim/bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "vim/.vim/bundle/JavaScript-Indent"]
+	path = vim/.vim/bundle/JavaScript-Indent
+	url = https://github.com/vim-scripts/JavaScript-Indent.git
+[submodule "vim/.vim/bundle/tern_for_vim"]
+	path = vim/.vim/bundle/tern_for_vim
+	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "vim/.vim/bundle/javascript-libraries-syntax.vim"]
+	path = vim/.vim/bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "vim/.vim/bundle/vim-nodejs-complete"]
+	path = vim/.vim/bundle/vim-nodejs-complete
+	url = https://github.com/ahayman/vim-nodejs-complete.git
+[submodule "vim/.vim/bundle/lint.vim"]
+	path = vim/.vim/bundle/lint.vim
+	url = https://github.com/joestelmach/lint.vim.git
+[submodule "vim/.vim/bundle/jade.vim"]
+	path = vim/.vim/bundle/jade.vim
+	url = https://github.com/vim-scripts/jade.vim.git
+[submodule "vim/.vim/bundle/jedi-vim"]
+	path = vim/.vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/.vim/bundle/pep8"]
+	path = vim/.vim/bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "vim/.vim/bundle/pytest.vim"]
+	path = vim/.vim/bundle/pytest.vim
+	url = https://github.com/vim-scripts/pytest.vim.git
+[submodule "vim/.vim/bundle/pydoc.vim"]
+	path = vim/.vim/bundle/pydoc.vim
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "vim/.vim/bundle/syntastic"]
+	path = vim/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/.vim/bundle/vim-surround"]
+	path = vim/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/.vim/bundle/vim-latex"]
+	path = vim/.vim/bundle/vim-latex
+	url = https://github.com/lervag/vim-latex.git

@@ -75,15 +75,16 @@ nmap <leader>a <ESC>:Ack!
 " Getting some extra functionalities~
 let g:molokai_original = 1
 let g:rehash256 = 1
+let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,angularui,requirejs,jasmine'
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:jedi#auto_initialization = 1
 let g:jedi#auto_vim_configuration = 1
-let g:jedi#use_tabs_not_buffers = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=white
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=darkgrey
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#use_splits_not_buffers = "bottom"
+let g:jedi#popup_select_first = 1
 let g:pyflakes_use_quickfix = 1
 let g:pep8_map='<leader>8'
 let g:tex_flavor="latex"
@@ -92,10 +93,13 @@ let java_highlight_functions="style"
 let java_allow_cpp_keywords=1
 let lint_default = 1
 let disable_lint = 0
+let g:SuperTabDefaultCompletionType = "context"
+let g:mustache_abbreviations = 1
 let g:nodejs_complete_config = {
             \ 'js_compl_fn': 'jscomplete#CompleteJS',
             \ 'max_node_compl_len': 15
             \}
+let d8_command = '/usr/local/bin/v8'
 
 " Virtualenv Hilighting
 py << EOF
@@ -114,11 +118,11 @@ au FileType javascript call JavaScriptFold()
 au FileType python set omnifunc=pythoncomplete#Complete
 au BufNewFile,BufRead *.zcml set filetype=xml
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-let g:SuperTabDefaultCompletionType = "context"
-let g:mustache_abbreviations = 1
 augroup mkd
       autocmd BufRead *.mkd *.md *.markdown set ai formatoptions=tcroqn2  shiftwidth=4 comments=n:> ft=markdown
       " autocmd BufRead *.md set ai formatoptions=tcroqn2 comments=n:> ft=markdown
       " autocmd BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:> ft=markdown
 augroup END
 autocmd FileType asm set ai formatoptions=tcrmqn2 comments=n:> ft=nasm
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=white
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=darkgrey
