@@ -1,7 +1,7 @@
 " trying to switch off filetype
 filetype off
 " Disabling vi compatibility
-set nocompatible
+" set nocompatible
 
 " Initializing pathogen.....
 call pathogen#infect()
