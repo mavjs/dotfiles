@@ -1,3 +1,9 @@
 [submodule "peda"]
 	path = peda
 	url = https://github.com/longld/peda.git
+[submodule "vim/.vim/bundle/Latex-Text-Formatter"]
+	path = vim/.vim/bundle/Latex-Text-Formatter
+	url = https://github.com/vim-scripts/Latex-Text-Formatter.git
+[submodule "vim/.vim/bundle/molokai"]
+	path = vim/.vim/bundle/molokai
+	url = https://github.com/tomasr/molokai.git

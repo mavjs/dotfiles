@@ -73,6 +73,8 @@ nmap <silent><Leader>te <Esc>:Pytest error<CR>
 nmap <leader>a <ESC>:Ack!
 
 " Getting some extra functionalities~
+let g:molokai_original = 1
+let g:rehash256 = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 1
 let g:indent_guides_start_level = 2
