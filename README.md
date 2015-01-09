@@ -24,23 +24,34 @@ Make sure you've [git](http://git-scm.com/) installed.
 
 Then clone the repo like this
 
-    % git clone --recursive git@github.com:mavjs/dotfiles.git
+    git clone --recursive git@github.com:mavjs/dotfiles.git
 
 or on older versions of git
     
-    % git clone git@github.com:mavjs/dotfiles.git
-    % cd dotfiles
-    % git submodule update --init
+    git clone git@github.com:mavjs/dotfiles.git
+    
+    cd dotfiles
+    
+    git submodule update --init
 
 Things to do after installing
 -----------------------------
 Please make sure you have [nodejs](http://nodejs.org/) which have npm, [brew](http://brew.sh/) if you're on Mac OSX, and for less headaches, install [macvim](https://code.google.com/p/macvim/)    
+### Mac OSX specifics ###
     
     brew install macvim --override-system-vim
     
     brew install v8
+
+### Fedora/RHEL-based ###
     
-    sudo npm install -g jshint jsonlint js-yaml
+    [sudo] yum install ruby-devel
+
+### All platforms ###
+
+    [sudo] gem install pygments.rb redcarpet
+
+    [sudo] npm install -g jshint jsonlint js-yaml instant-markdown-d
     
     cd dotfiles/vim/.vim/bundle/tern_for_vim
     
