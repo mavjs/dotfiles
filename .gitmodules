@@ -85,3 +85,6 @@
 [submodule "vim/.vim/bundle/vim-instant-markdown"]
 	path = vim/.vim/bundle/vim-instant-markdown
 	url = https://github.com/suan/vim-instant-markdown
+[submodule "vim/.vim/bundle/neocomplete.vim"]
+	path = vim/.vim/bundle/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim.git
