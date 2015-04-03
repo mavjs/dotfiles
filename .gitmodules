@@ -88,3 +88,6 @@
 [submodule "vim/.vim/bundle/neocomplete.vim"]
 	path = vim/.vim/bundle/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "vim/.vim/bundle/vim-gocode"]
+	path = vim/.vim/bundle/vim-gocode
+	url = git@github.com:Blackrush/vim-gocode.git
