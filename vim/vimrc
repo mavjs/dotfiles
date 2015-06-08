@@ -45,6 +45,9 @@ set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %
 nnoremap ; :
 nnoremap : ;
 
+" clear search with double Return
+nnoremap <CR> :noh<CR><CR>
+
 " Key mappings
 " move with Ctrl+<movement key>
 map <c-j> <c-w>j
