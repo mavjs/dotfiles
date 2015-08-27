@@ -45,7 +45,7 @@ Please make sure you have [nodejs](http://nodejs.org/) which have npm, [brew](ht
 
 ### Fedora/RHEL-based ###
     
-    [sudo] yum install ruby-devel
+    [sudo] dnf install ruby-devel
 
 ### All platforms ###
 
