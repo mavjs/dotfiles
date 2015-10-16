@@ -90,13 +90,13 @@
 	url = https://github.com/Shougo/neocomplete.vim.git
 [submodule "vim/.vim/bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
+	url = https://github.com/bling/vim-airline.git
 [submodule "vim/.vim/bundle/vim-gocode"]
 	path = vim/.vim/bundle/vim-gocode
-	url = git@github.com:Blackrush/vim-gocode.git
+	url = https://github.com/Blackrush/vim-gocode.git
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
-	url = git@github.com:majutsushi/tagbar.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/.vim/bundle/vim-go"]
 	path = vim/.vim/bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
+	url = https://github.com/fatih/vim-go.git
