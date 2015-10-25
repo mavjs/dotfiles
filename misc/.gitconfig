@@ -1,13 +1,17 @@
 [user]
 	name = 
 	email = 
+[github]
+	user = 
 [core]
     excludesfile = ~/.gitignore_global
+    editor = vim -f
 [color]
     branch = auto
     diff = auto
     interactive = auto
     status = auto
     ui = true
+    pager = true
 [push]
 	default = simple

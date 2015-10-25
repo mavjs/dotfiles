@@ -35,6 +35,7 @@ plugins=(git github git-flow mercurial python svn yum)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export DJANGO_SETTINGS_MODULE=project.settings
+# export DJANGO_SETTINGS_MODULE=project.settings
 export WORKON_HOME=$HOME/.virtualenvs
-export PATH=$PATH:~/bin:
+export GOPATH=$HOME/go
+export PATH=~/bin:$PATH:$GOPATH/bin
