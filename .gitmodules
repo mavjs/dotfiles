@@ -100,6 +100,3 @@
 [submodule "vim/.vim/bundle/vim-go"]
 	path = vim/.vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule "misc/gdb-dashboard"]
-	path = misc/gdb-dashboard
-	url = https://github.com/cyrus-and/gdb-dashboard.git
