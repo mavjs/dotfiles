@@ -34,6 +34,10 @@ or on older versions of git
 
     git submodule update --init
 
+[optional] Update git submodules to latest master
+
+    git submodule foreach git pull origin master
+
 Things to do after installing
 -----------------------------
 Please make sure you have [nodejs](http://nodejs.org/) which have npm, [brew](http://brew.sh/) if you're on Mac OSX, and for less headaches, install [macvim](https://code.google.com/p/macvim/)
