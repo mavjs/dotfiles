@@ -38,9 +38,22 @@ or on older versions of git
 
     git submodule foreach git pull origin master
 
+Installing
+----------
+[GNU Stow](https://www.gnu.org/software/stow/) is highly recommended for manging these dotfiles.
+
+Example, installing .vim and .vimrc to correct places (inside the dotfiles folder):
+
+    stow vim
+
+.vim and .vimrc will be installed correctly to ~/.vim and ~/.vimrc
+
 Things to do after installing
 -----------------------------
 Please make sure you have [nodejs](http://nodejs.org/) which have npm, [brew](http://brew.sh/) if you're on Mac OSX, and for less headaches, install [macvim](https://code.google.com/p/macvim/)
+
+**Also make sure the installed config files' values are edited for your use.**
+
 ### Mac OSX specifics ###
 
     brew install macvim --override-system-vim
