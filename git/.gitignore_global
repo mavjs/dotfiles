@@ -1,6 +1,9 @@
 # Vim stuff
 *.swp
 
+# Jetbrains IDE stuff
+.idea
+
 #########################
 # Python related stuff #
 ########################
