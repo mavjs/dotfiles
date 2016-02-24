@@ -39,3 +39,5 @@ source $ZSH/oh-my-zsh.sh
 export WORKON_HOME=$HOME/.virtualenvs
 export GOPATH=$HOME/go
 export PATH=~/bin:$PATH:$GOPATH/bin
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
