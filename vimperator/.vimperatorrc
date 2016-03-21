@@ -2,6 +2,6 @@
 
 nnoremap ; :
 nnoremap : ;
-source! /home/mavjs/.vimperatorrc.local
+source! ~/.vimperatorrc.local
 
 " vim: set ft=vimperator:
