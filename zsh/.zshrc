@@ -35,9 +35,8 @@ plugins=(git github git-flow mercurial python svn yum)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-# export DJANGO_SETTINGS_MODULE=project.settings
 export WORKON_HOME=$HOME/.virtualenvs
 export GOPATH=$HOME/go
-export PATH=~/bin:$PATH:$GOPATH/bin
+export PATH=~/bin:$PATH:$GOPATH/bin:~/android-studio/bin:/usr/local/heroku/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
