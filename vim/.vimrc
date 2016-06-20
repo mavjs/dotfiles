@@ -39,9 +39,9 @@
     set ruler
     set laststatus=2 " to show status line
     set colorcolumn=80
-	" set shellslash
-	set shell=zsh
-	set wildignore=*.swp,*.bak,*.pyc,*.class
+    " set shellslash
+    set shell=zsh
+    set wildignore=*.swp,*.bak,*.pyc,*.class
     set completeopt=menuone,longest,preview
     set pastetoggle=<F10>
     set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P 
