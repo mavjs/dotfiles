@@ -1,139 +1,116 @@
-" trying to switch off filetype
-filetype off
-" Disabling vi compatibility
-" set nocompatible
+" Source: https://github.com/mavjs/dotfiles
 
-" Initializing pathogen.....
-call pathogen#infect()
-syntax on
+" Initial configs {{{
+    filetype off
+    set nocompatible
+" }}}
 
-" Initializing Colour Scheme.....
-set background=dark
-colorscheme molokai
+" Initialise Pathogen {{{
+    call pathogen#infect()
+" }}}
 
-" Getting some vim swag on!
-filetype on
-filetype plugin indent on
-set foldmethod=indent
-set foldlevel=99
-set laststatus=2 " to show status line
-set cursorline
-set cursorcolumn
-set shellslash
-set expandtab
-set autoindent
-set smartindent
-set shell=zsh
-set tabstop=4
-set shiftwidth=4
-set history=1000
-set wildignore=*.swp,*.bak,*.pyc,*.class
-set number
-set title
-set wrap
-set ruler
-set colorcolumn=80
-set t_Co=256
-"set nobackup
-"set noswapfile
-set pastetoggle=<F10>
-set completeopt=menuone,longest,preview
-set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P 
-"set statusline=%t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P 
+" Configs {{{
+	filetype plugin indent on
+    syntax enable
+    set nocompatible    " leave vi-compatibility mode
+    set encoding=utf-8  " unicode encoding by default
+    set title           " show title in terminal
+    set ttyfast
+    set noexrc          " enables reading of .vimrc in current dir
+    set gdefault        " enables global searching by default
+    set linebreak
+    set showcmd
+    set lisp
+    set nostartofline
+    set history=1000
+    set visualbell
+    set backspace=indent,eol,start
+    set number
+    set showmode
+    set mousehide
+    set hlsearch
+    set autowrite
+    set autoread
+    set shiftround
+    set incsearch
+    set showmatch
+    set cursorline
+    set cursorcolumn
+    set ruler
+    set laststatus=2 " to show status line
+    set colorcolumn=80
+	" set shellslash
+	set shell=zsh
+	set wildignore=*.swp,*.bak,*.pyc,*.class
+    set completeopt=menuone,longest,preview
+    set pastetoggle=<F10>
+    set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P 
+    "set nobackup
+    "set noswapfile
+" }}}
+" Environment (GUI/Console) {{{
+    syntax enable
+    set background=dark
+    set t_Co=256
+    colorscheme molokai
+" }}}
+" Tabs, spaces, wrapping {{{
+    set expandtab
+    set wrap
+    set smartindent
+    set autoindent
+    set tabstop=4
+    set shiftwidth=4
+	set ci
+	set formatoptions=qrn1
+	set textwidth=80
+	set smarttab
+" }}}
+" Folding {{{
+	set foldmethod=indent
+	set foldlevel=99
+" }}}
 
-" remap : and ;
-nnoremap ; :
-nnoremap : ;
-
-" clear search with double Return
-nnoremap <CR> :noh<CR><CR>
-
-" Key mappings
-" move with Ctrl+<movement key>
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
-" mappings for plugins
-map <leader>td <Plug>TaskList
-nnoremap <leader>g :GundoToggle<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
-map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
-nnoremap <F8> :TagbarToggle<CR>
-
-" Py.test mappings
-" Execute the tests
-nmap <silent><Leader>tf <Esc>:Pytest file<CR>
-nmap <silent><Leader>tc <Esc>:Pytest class<CR>
-nmap <silent><Leader>tm <Esc>:Pytest method<CR>
-" cycle through test errors
-nmap <silent><Leader>tn <Esc>:Pytest next<CR>
-nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
-nmap <silent><Leader>te <Esc>:Pytest error<CR>
-
-
-nmap <leader>a <ESC>:Ack!
-
-" Getting some extra functionalities~
-let g:molokai_original = 1
-let g:rehash256 = 1
-let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,angularui,requirejs,jasmine'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-let g:jedi#auto_initialization = 1
-let g:jedi#auto_vim_configuration = 1
-let g:jedi#use_tabs_not_buffers = 1
-let g:jedi#use_splits_not_buffers = "bottom"
-let g:jedi#popup_select_first = 1
-let g:pyflakes_use_quickfix = 1
-let g:pep8_map='<leader>8'
-let g:tex_flavor="latex"
-let g:neocomplete#enable_at_startup = 1
-let java_highlight_all=1
-let java_highlight_functions="style"
-let java_allow_cpp_keywords=1
-let lint_default = 1
-let disable_lint = 0
-let g:SuperTabDefaultCompletionType = "context"
-let g:mustache_abbreviations = 1
-let g:nodejs_complete_config = {
-            \ 'js_compl_fn': 'javascriptcomplete#CompleteJS',
-            \ 'max_node_compl_len': 15
-            \}
-let d8_command = '/usr/local/bin/v8'
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-\ }
-
-" Virtualenv Hilighting
+" Keymappings {{{
+    " remap : to ;, vice-versa {{{
+        nnoremap ; :
+        nnoremap : ;
+    " }}}
+    " clear search with double Return {{{
+        nnoremap <CR> :noh<CR><CR>
+    " }}}
+    " move with Ctrl+<movement key> {{{
+        map <c-j> <c-w>j
+        map <c-k> <c-w>k
+        map <c-l> <c-w>l
+        map <c-h> <c-w>h
+    " }}}
+    " mappings for plugins {{{
+        map <leader>td <Plug>TaskList
+        nnoremap <leader>g :GundoToggle<CR>
+        nnoremap <leader>n :NERDTreeToggle<CR>
+        map <leader>j :RopeGotoDefinition<CR>
+        map <leader>r :RopeRename<CR>
+        map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
+        nnoremap <F8> :TagbarToggle<CR>
+    " }}}
+    " Py.test mappings {{{
+        " Execute the tests {{{
+            nmap <silent><Leader>tf <Esc>:Pytest file<CR>
+            nmap <silent><Leader>tc <Esc>:Pytest class<CR>
+            nmap <silent><Leader>tm <Esc>:Pytest method<CR>
+        " }}}
+        " cycle through test errors {{{
+            nmap <silent><Leader>tn <Esc>:Pytest next<CR>
+            nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
+            nmap <silent><Leader>te <Esc>:Pytest error<CR>
+        " }}}
+    " }}}
+    " Ack.vim mapping {{{
+        nmap <leader>a <ESC>:Ack!
+    " }}}
+" }}}
+" Virtualenv Hilighting {{{
 py << EOF
 import os.path
 import sys
@@ -144,17 +121,4 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
-
-" Modes for files
-au FileType javascript call JavaScriptFold()
-au FileType python set omnifunc=pythoncomplete#Complete
-au BufNewFile,BufRead *.zcml set filetype=xml
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-augroup mkd
-      autocmd BufRead *.mkd *.md *.markdown set ai formatoptions=tcroqn2  shiftwidth=4 comments=n:> ft=markdown
-      " autocmd BufRead *.md set ai formatoptions=tcroqn2 comments=n:> ft=markdown
-      " autocmd BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:> ft=markdown
-augroup END
-autocmd FileType asm set ai formatoptions=tcrmqn2 comments=n:> ft=nasm
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=white
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=darkgrey
+" }}}
