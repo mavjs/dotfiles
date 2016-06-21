@@ -44,7 +44,7 @@
     set wildignore=*.swp,*.bak,*.pyc,*.class
     set completeopt=menuone,longest,preview
     set pastetoggle=<F10>
-    set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P 
+    set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P
     "set nobackup
     "set noswapfile
 " }}}
@@ -121,4 +121,22 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+" }}}
+" Configs based on Filetype {{{
+	" python files {{{
+		au BufNewFile,BufRead *.py
+			\ set tabstop=4
+			\ set softtabstop=4
+			\ set shiftwidth=4
+			\ set textwidth=79
+			\ set expandtab
+			\ set autoindent
+			\ set fileformat=unix
+	" }}}
+	" .js, .html, .css files {{{
+		au BufNewFile,BufRead *.js, *.html, *.css
+			\ set tabstop=2
+			\ set softtabstop=2
+			\ set shiftwidth=2
+	" }}}
 " }}}
