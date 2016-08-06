@@ -15,3 +15,5 @@
     pager = true
 [push]
 	default = simple
+[grep]
+    lineNumber = true
