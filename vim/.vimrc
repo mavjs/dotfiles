@@ -12,6 +12,9 @@
 " Configs {{{
 	filetype plugin indent on
     syntax enable
+    " EditorConfig {{{
+        let g:EditorConfig_exclude_patterns=['fugitive://.*', 'scp://.*']
+    " }}}
     set nocompatible    " leave vi-compatibility mode
     set encoding=utf-8  " unicode encoding by default
     set title           " show title in terminal
@@ -67,7 +70,7 @@
 	set smarttab
 " }}}
 " Folding {{{
-	set foldmethod=indent
+	set foldmethod=syntax
 	set foldlevel=99
 " }}}
 
