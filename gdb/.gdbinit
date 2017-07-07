@@ -1,1 +1,1 @@
-source $HOME/dotfiles/gdb/peda/peda.py
+source ~/dotfiles/gdb/peda/peda.py
