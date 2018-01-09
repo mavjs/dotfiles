@@ -1,1 +1,1 @@
-source ~/dotfiles/gef/gef.py
+source ~/dotfiles/gdb-gef/gef.py
