@@ -6,8 +6,11 @@
     set laststatus=2 " to show status line with airline
 " }}}
 
+" Initialise Pathogen {{{
+    execute pathogen#infect()
+" }}}
+
 " Configs {{{
-	filetype plugin indent on
     syntax enable
     " EditorConfig {{{
         let g:EditorConfig_exclude_patterns=['fugitive://.*', 'scp://.*']
@@ -28,8 +31,7 @@
 	set softtabstop=4
 " }}}
 " Environment (GUI/Console) {{{
-    colorscheme molokai
-"
+    colorscheme dracula
 " }}}
 
 " Keymappings {{{
@@ -72,7 +74,3 @@
 	" }}}
 " }}}
 
-" Initialise Pathogen {{{
-    execute pathogen#infect()
-    call pathogen#helptags()
-" }}}
