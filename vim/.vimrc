@@ -1,77 +1,37 @@
 " Source: https://github.com/mavjs/dotfiles
 
 " Initial configs {{{
-    filetype off
-    set nocompatible
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
+    set runtimepath^=~/.vim/bundle/vim-airline/plugin/airline.vim
+    set laststatus=2 " to show status line with airline
 " }}}
 
 " Initialise Pathogen {{{
-    call pathogen#infect()
+    execute pathogen#infect()
 " }}}
 
 " Configs {{{
-	filetype plugin indent on
     syntax enable
     " EditorConfig {{{
         let g:EditorConfig_exclude_patterns=['fugitive://.*', 'scp://.*']
     " }}}
-    set nocompatible    " leave vi-compatibility mode
-    set encoding=utf-8  " unicode encoding by default
-    set title           " show title in terminal
-    set ttyfast
-    set noexrc          " enables reading of .vimrc in current dir
-    set gdefault        " enables global searching by default
-    set linebreak
-    set showcmd
-    set lisp
-    set nostartofline
-    set history=1000
-    set visualbell
-    set backspace=indent,eol,start
-    set number
-    set showmode
-    set mousehide
-    set hlsearch
-    set autowrite
-    set autoread
-    set shiftround
-    set incsearch
-    set showmatch
+    set encoding=utf-8 " unicode encoding by default
+    set title " show title in terminal
+    set number " show line numbers
+    set hlsearch " highlight matches
+    set incsearch " search as characters are entere
+    set showmatch " highlight matching parentheses
     set cursorline
-    set cursorcolumn
-    set ruler
-    set laststatus=2 " to show status line
-    set colorcolumn=80
-    " set shellslash
-    set shell=zsh
     set wildignore=*.swp,*.bak,*.pyc,*.class
-    set completeopt=menuone,longest,preview
-    set pastetoggle=<F10>
-    set statusline=%{fugitive#statusline()}\ %t\ %y\ format:\ %{&ff}\ [\%c\,\%l\]\ %P
-    "set nobackup
-    "set noswapfile
-" }}}
-" Environment (GUI/Console) {{{
-    syntax enable
-    set background=dark
-    set t_Co=256
-    colorscheme molokai
-" }}}
-" Tabs, spaces, wrapping {{{
-    set expandtab
-    set wrap
+    set noswapfile
     set smartindent
-    set autoindent
+    set expandtab " tab to spaces
     set tabstop=4
     set shiftwidth=4
-	set ci
-	set formatoptions=qrn1
-	set textwidth=80
-	set smarttab
+	set softtabstop=4
 " }}}
-" Folding {{{
-	set foldmethod=syntax
-	set foldlevel=99
+" Environment (GUI/Console) {{{
+    colorscheme dracula
 " }}}
 
 " Keymappings {{{
@@ -90,48 +50,18 @@
     " }}}
     " mappings for plugins {{{
         map <leader>td <Plug>TaskList
-        nnoremap <leader>g :GundoToggle<CR>
         nnoremap <leader>n :NERDTreeToggle<CR>
-        map <leader>j :RopeGotoDefinition<CR>
-        map <leader>r :RopeRename<CR>
-        map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
-        nnoremap <F8> :TagbarToggle<CR>
-    " }}}
-    " Py.test mappings {{{
-        " Execute the tests {{{
-            nmap <silent><Leader>tf <Esc>:Pytest file<CR>
-            nmap <silent><Leader>tc <Esc>:Pytest class<CR>
-            nmap <silent><Leader>tm <Esc>:Pytest method<CR>
-        " }}}
-        " cycle through test errors {{{
-            nmap <silent><Leader>tn <Esc>:Pytest next<CR>
-            nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
-            nmap <silent><Leader>te <Esc>:Pytest error<CR>
-        " }}}
-    " }}}
-    " Ack.vim mapping {{{
-        nmap <leader>a <ESC>:Ack!
+        nnoremap <leader>tg :TagbarToggle<CR>
     " }}}
 " }}}
-" Virtualenv Hilighting {{{
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
-" }}}
+
 " Configs based on Filetype {{{
 	" python files {{{
 		au BufNewFile,BufRead *.py
 			\ set tabstop=4
 			\ set softtabstop=4
 			\ set shiftwidth=4
-			\ set textwidth=79
+			\ set textwidth=80
 			\ set expandtab
 			\ set autoindent
 			\ set fileformat=unix
@@ -143,3 +73,4 @@ EOF
 			\ set shiftwidth=2
 	" }}}
 " }}}
+
