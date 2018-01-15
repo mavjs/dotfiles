@@ -13,7 +13,7 @@
 " Configs {{{
     syntax enable
     " EditorConfig {{{
-        let g:EditorConfig_exclude_patterns=['fugitive://.*', 'scp://.*']
+        " let g:EditorConfig_exclude_patterns=['fugitive://.*', 'scp://.*']
     " }}}
     set encoding=utf-8 " unicode encoding by default
     set title " show title in terminal
@@ -28,7 +28,7 @@
     set expandtab " tab to spaces
     set tabstop=4
     set shiftwidth=4
-	set softtabstop=4
+    set softtabstop=4
 " }}}
 " Environment (GUI/Console) {{{
     colorscheme dracula
@@ -56,21 +56,20 @@
 " }}}
 
 " Configs based on Filetype {{{
-	" python files {{{
-		au BufNewFile,BufRead *.py
-			\ set tabstop=4
-			\ set softtabstop=4
-			\ set shiftwidth=4
-			\ set textwidth=80
-			\ set expandtab
-			\ set autoindent
-			\ set fileformat=unix
-	" }}}
-	" .js, .html, .css files {{{
-		au BufNewFile,BufRead *.js, *.html, *.css
-			\ set tabstop=2
-			\ set softtabstop=2
-			\ set shiftwidth=2
-	" }}}
+    " python files {{{
+"        au BufNewFile,BufRead *.py
+"            \ set tabstop=4 |
+"            \ set softtabstop=4 |
+"            \ set shiftwidth=4 |
+"            \ set textwidth=80 |
+"            \ set expandtab |
+"            \ set autoindent |
+"            \ set fileformat=unix
+    " }}}
+    " .js, .html, .css files {{{
+"        au BufNewFile,BufRead *.js,*.html,*.css
+"            \ set tabstop=2 |
+"            \ set softtabstop=2 |
+"            \ set shiftwidth=2
+    " }}}
 " }}}
-
