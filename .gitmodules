@@ -29,7 +29,7 @@
 	path = gdb-dashboard
 	url = https://github.com/cyrus-and/gdb-dashboard.git
 [submodule "gdb/peda"]
-	path = gdb/peda
+	path = gdb-peda/peda
 	url = https://github.com/longld/peda.git
 [submodule "vim/.vim/bundle/dracula-theme"]
 	path = vim/.vim/bundle/dracula-theme
