@@ -15,30 +15,28 @@ This repository contains configuration files that I use on all my computers.
 # Usage
 Make sure you've [git](http://git-scm.com/) installed.
 
-Then clone the repo like this
-
+Then clone the repo like this:
+```
     git clone --recursive git@github.com:mavjs/dotfiles.git
-
+```
 or on older versions of git
-
+```
     git clone git@github.com:mavjs/dotfiles.git
-
     cd dotfiles
-
     git submodule update --init
-
+```
 [optional] Update git submodules to latest master
-
+```
     git submodule foreach git pull origin master
-
+```
 # Installing
 ## Required Tool(s)
 * [GNU Stow](https://www.gnu.org/software/stow/) ([used to install the config files in the respective places in $HOME](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/))
 
 Example of installing .vim and .vimrc to correct places (inside the dotfiles folder):
-
+```
     stow vim
-
+```
 .vim and .vimrc will be installed correctly to ```~/.vim``` and ```~/.vimrc```
 
 ## Optional Tool(s)
@@ -48,9 +46,10 @@ Please make sure you have some of the following tools installed:
 
 ### Mac OSX specific example
 If you want to use vim version greater than what macOS provides:
-
+```
     brew install macvim --override-system-vim
-
+```
 Or if you prefer, install neovim:
-
+```
     brew install neovim
+```
