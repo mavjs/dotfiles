@@ -34,6 +34,7 @@ or on older versions of git
 # Installing
 ## Required Tool(s)
 * [GNU Stow](https://www.gnu.org/software/stow/) ([used to install the config files in the respective places in $HOME](https://alexpearce.me/2016/02/managing-dotfiles-with-stow/))
+
 Example of installing .vim and .vimrc to correct places (inside the dotfiles folder):
 
     stow vim
