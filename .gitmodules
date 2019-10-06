@@ -34,3 +34,6 @@
 [submodule "vim/.vim/bundle/dracula-theme"]
 	path = vim/.vim/bundle/dracula-theme
 	url = https://github.com/dracula/vim.git
+[submodule "vim/.vim/bundle/editorconfig-vim"]
+	path = vim/.vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
