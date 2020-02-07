@@ -13,6 +13,9 @@ set $left h
 set $down j
 set $up k
 set $right l
+
+# Set some font preferences
+font pango:SourceCodePro Regular 11
 # Your preferred terminal emulator
 #set $term urxvt256c-ml
 set $term gnome-terminal
