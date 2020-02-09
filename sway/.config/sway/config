@@ -58,10 +58,12 @@ output HDMI-A-2 {
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
  exec swayidle -w \
-          timeout 300 $lock-data \
-          timeout 600 'swaymsg "output * dpms off"' \
-               resume 'swaymsg "output * dpms on"' \
-          before-sleep $lock-data
+          timeout 300 "$lock-data" \
+          timeout 300 'swaymsg "output * dpms off"' \
+          resume 'swaymsg "output * dpms on"' \
+          timeout 30 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' \
+          resume 'if pgrep swaylock; then swaymsg "output * dpms on"; fi' \
+          before-sleep "$lock-data"
 
 ### Input configuration
 #
@@ -82,6 +84,11 @@ input "1:1:AT_Translated_Set_2_keyboard" {
 }
 
 input "2:10:TPPS/2_IBM_TrackPoint" {
+    # set mouse sensitivity (-1 to 1)
+    pointer_accel 1
+}
+
+input "1739:0:Synaptics_TM3276-022" {
     # set mouse sensitivity (-1 to 1)
     pointer_accel 1
 }
@@ -224,6 +231,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 #
 # Status Bar:
@@ -245,3 +254,4 @@ bar {
 
 # Start up some essential applications
 exec "/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh"
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
