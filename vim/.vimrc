@@ -56,6 +56,7 @@
 " }}}
 
 " Configs based on Filetype {{{
+    au FileType yaml,html,js setlocal ts=2 sw=2 sts=2
     " python files {{{
 "        au BufNewFile,BufRead *.py
 "            \ set tabstop=4 |
