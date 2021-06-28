@@ -1,3 +1,20 @@
+#status bar
+set -g status-interval 1
+set -g status-justify centre # center align window list
+set -g status-left-length 65
+set -g status-right-length 140
+set -g status-left '#[fg=green]#H #[fg=black]• #[fg=green]#(uname -r)'
+set -g status-right '#[fg=red]#(uptime | cut -f 4-5 -d " " | cut -f 1 -d ",") #[fg=green]%a %H:%M:%S #[fg=blue]%d-%m-%Y'
+
+# default statusbar colors
+set -g status-style fg=white,bg=default,bright
+
+# default window title colors
+set-window-option -g window-status-style fg=white,bg=default,dim
+
+# active window title colors
+set-window-option -g window-status-current-style fg=white,bg=default,bright
+
 # C-b is not acceptable -- Vim uses it
 set-option -g prefix C-a
 bind-key C-a last-window
@@ -17,6 +34,13 @@ setw -g aggressive-resize on
 # another TMUX session
 bind-key a send-prefix
 
+# Activity monitoring
+setw -g monitor-activity on
+set -g visual-activity on
+
+# Highlight active window
+set-window-option -g window-status-current-style bg=red
+
 # Vi copypaste mode
 set-window-option -g mode-keys vi
 bind-key -T copy-mode-vi v send-keys -X begin-selection
@@ -31,14 +55,18 @@ bind l select-pane -R
 # reload config
 bind r source-file ~/.tmux.conf \; display-message "Config reloaded..."
 
-# list sessions, because I overwrite with movement
+#list sessions, because I overwrite with movement
 bind L list-sessions
 
 # auto window rename
 set-window-option -g automatic-rename
 
-# set mouse mode
-set -g mouse on
+# rm mouse mode fail
+set -g mouse off
+#set -g mode-mouse on
+#set -g mouse-resize-pane off
+#set -g mouse-select-window off
+#set -g mouse-select-pane off
 
 # color
 set -g default-terminal  "screen-256color"
@@ -50,3 +78,10 @@ bind _ split-window -v -c '#{pane_current_path}'
 # pane movement
 bind-key g command-prompt -p "get pane from:"  "join-pane -s '%%'"
 bind-key s command-prompt -p "send pane to:"  "join-pane -t '%%'"
+
+# force screen-256 color
+set -g default-terminal "screen-256color"
+
+# set terminal title to adapt with current stuff
+set -g set-titles on
+set-option -g set-titles-string '#S:#I:#P #W #H'
