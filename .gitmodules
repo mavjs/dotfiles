@@ -1,39 +1,6 @@
-[submodule "vim/.vim/bundle/molokai"]
-	path = vim/.vim/bundle/molokai
-	url = https://github.com/tomasr/molokai.git
-[submodule "vim/.vim/bundle/TaskList.vim"]
-	path = vim/.vim/bundle/TaskList.vim
-	url = https://github.com/vim-scripts/TaskList.vim.git
-[submodule "vim/.vim/bundle/spec.vim"]
-	path = vim/.vim/bundle/spec.vim
-	url = https://github.com/vim-scripts/spec.vim.git
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/.vim/bundle/ctrlp.vim"]
-	path = vim/.vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/.vim/bundle/vim-airline"]
-	path = vim/.vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
-[submodule "vim/.vim/bundle/tagbar"]
-	path = vim/.vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
-[submodule "vim/.vim/bundle/vim-go"]
-	path = vim/.vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "gdb-dashboard"]
 	path = gdb-dashboard
 	url = https://github.com/cyrus-and/gdb-dashboard.git
-[submodule "gdb/peda"]
-	path = gdb-peda/peda
-	url = https://github.com/longld/peda.git
-[submodule "vim/.vim/bundle/dracula-theme"]
-	path = vim/.vim/bundle/dracula-theme
-	url = https://github.com/dracula/vim.git
-[submodule "vim/.vim/bundle/editorconfig-vim"]
-	path = vim/.vim/bundle/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
