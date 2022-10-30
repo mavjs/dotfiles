@@ -2,12 +2,8 @@
 This repository contains configuration files that I use on all my computers.
 
 ## Contains
-* buildout - default buildout configuration file
-* dwm - dwm window manager config file (not sure what I changed here)
-* i3 - i3 window manager config file (not sure what I changed here either)
 * misc - miscellaneous configurations
 * [gef](https://github.com/hugsy/gef) - GDB Enhanced Features for exploit devs & reverse engineers
-* [peda](https://github.com/longld/peda) - python exploit development assistance for GDB
 * vim - vimrc and various extensions
 * [neovim](https://neovim.io/) - neovim config file
 * zsh - zshrc and [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), 'cause it's OH-SM!!! \o/
