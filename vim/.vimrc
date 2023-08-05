@@ -1,5 +1,4 @@
 set encoding=utf-8
-set laststatus=2
 set number
 set noswapfile
 set smartindent
@@ -8,6 +7,7 @@ set softtabstop=4
 set cc=80
 set ttymouse=xterm2
 set mouse=a
+set laststatus=2
 colorscheme elflord
 nnoremap ; :
 nnoremap : ;
