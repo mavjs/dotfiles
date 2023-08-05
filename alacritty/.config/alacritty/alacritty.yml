@@ -1,12 +1,12 @@
 env:
-  TERM: xterm-256color
+  TERM: screen-256color
 window:
   decorations: none
   #startup_mode: Maximized
-  #gtk_theme_variant: dark
-  #padding:
-    #x: 5
-    #y: 5
+  gtk_theme_variant: dark
+  padding:
+    x: 5
+    y: 5
 draw_bold_text_with_bright_colors: true
 colors:
    # Default colors
@@ -35,8 +35,19 @@ colors:
      cyan:    '#00ffff'
      white:   '#ffffff'
 font:
-  family: Source Code Pro
-  size: 11
+  normal:
+    family: Noto Sans Mono
+    style: Regular
+  bold:
+    family: Noto Sans Mono
+    style: Bold
+  italic:
+    family: Noto Sans Mono
+    style: Italic
+  bold_italic:
+    family: Noto Sans Mono
+    style: Bold Italic
+  size: 12
 key_bindings:
-  - { key: N,              mods: Control,            action: SpawnNewInstance }
+  - { key: N,              mods: Control|Shift,            action: SpawnNewInstance }
   - { key: F11,                                      action: ToggleFullscreen }
