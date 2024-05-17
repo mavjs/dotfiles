@@ -1,5 +1,5 @@
 [submodule "zsh/oh-my-zsh"]
-	path = zsh/oh-my-zsh
+	path = ohmyzsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "gdb-dashboard"]
 	path = gdb-dashboard
